@@ -35,9 +35,7 @@ $(function(){
 	//function to animate the rotation of the images to the left
 	function animateImageLeft(prevImg, currentImg) {
 		//move the image to be displayed off the visible container to the right
-		currentImg.css({"z-index":"-1"});
 		currentImg.css({"left":"100%"});
-		currentImg.css({"z-index":"10"});
 		//slide the image to be displayed from off the container onto the visible container to make it slide from the right to left
 		currentImg.animate({"left":"0%"}, 1000);
 		//slide the previous image off the container from right to left
@@ -47,7 +45,6 @@ $(function(){
 	function animateImage(prevImg, currentImg) {
 		//move the image to be displayed off the container to the left
 		currentImg.css({"left":"-100%"});
-		currentImg.css({"z-index":"10"});
 		//slide the image to be displayed from off the container onto the container to make it slide from left to right
 		currentImg.animate({"left":"0%"}, 1000);
 		//slide the image from on the container to off the container to make it slide from left to right
